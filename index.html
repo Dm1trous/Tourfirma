@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Шангри-Ла</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/f2cc8d7f38.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/slick.css">
+</head>
+
+<body>
+	<!-- Шапка -->
+	<header class="header">
+		<h1 class="header__logo"><a class="logo-link" href="#">Шангри-Ла</a></h1>
+		<nav class="nav">
+			<a href="tel:83431224523" class="header__phone">8-343-122-45-23</a>
+		</nav>
+	</header>
+	<!-- Слоган -->
+	<section class="slogan">
+		<div class="slogan-bg" style="background-image: url(img/hero.jpg);"></div>
+		<h1 class="slogan__title">С нами путешествовать просто</h1>
+		<h2 class="slogan__subtitle">Мы обо всем позаботились - отдыхайте!</h2>
+		<a href="#bid" class="slogan__btn">Подобрать тур</a>
+	</section>
+	<!-- Особенности горящих туров -->
+	<section class="particularity">
+		<h2 class="section-title">Особенности горящих туров</h2>
+		<h3 class="particularity__title">Низкая цена</h3>
+		<p class="particularity__text">Не все туристы имеют возможность заранее спланировать поездку. Иногда решение об отпуске принимается спонтанно, и времени на подготовку путешествия попросту не остается.</p>
+		<h3 class="particularity__title">Возможность отправиться в поездку немедленно</h3>
+		<p class="particularity__text">Между покупкой турпакета и непосредственным путешествием проходит совсем мало времени. Таким образом, туристу не приходится томиться в ожидании поездки, а можно наслаждаться отдыхом и новыми
+			впечатлениями практически сразу.</p>
+		<h3 class="particularity__title">Отсутствие возможности выбора</h3>
+		<p class="particularity__text">Определенного типа отеля, даты и времени вылета самолета, а также количества дней, которые можно будет провести на отдыхе в другой стране. Это связано с тем, что предлагаемый горящий тур уже
+			предварительно скомплектован туроператором и не подлежит изменению.</p>
+	</section>
+	<!-- Фильтр -->
+	<section class="filter">
+		<h2 class="section-title">Горящие туры по направлениям</h2>
+		<div class="ff-container">
+			<input type="radio" name="categories" id="all" class="filter-radio" value="all">
+			<input type="radio" name="categories" id="rus" class="filter-radio" value="rus">
+			<input type="radio" name="categories" id="ind" class="filter-radio" value="ind">
+			<input type="radio" name="categories" id="china" class="filter-radio" value="china">
+			<input type="radio" name="categories" id="viet" class="filter-radio" value="viet">
+			<ul class="filter-controls">
+				<li><label class="controls-label" for="all">Все направления</label></li>
+				<li><label class="controls-label" for="rus">Россия</label></li>
+				<li><label class="controls-label" for="ind">Индонезия</label></li>
+				<li><label class="controls-label" for="china">Китай</label></li>
+				<li><label class="controls-label" for="viet">Вьетнам</label></li>
+			</ul>
+			<div class="grid ff-items">
+				<div class="card item-rus" data-category="rus" >
+					<img class="card-img"src="img/t1.jpg" alt="тур"/>
+					<h3 class="card-resort">Адлер</h3>
+					<h4 class="card-price">28600 руб.</h4>
+					<p class="card-country">Россия</p>
+				</div>
+				<div class="card item-rus" data-category="rus">
+					<img class="card-img"src="img/t2.jpg" alt="тур"/>
+					<h3 class="card-resort">Крым</h3>
+					<h4 class="card-price">38750 руб.</h4>
+					<p class="card-country">Россия</p>
+				</div>
+				<div class="card item-ind" data-category="ind">
+					<img class="card-img"src="img/t3.jpg" alt="тур"/>
+					<h3 class="card-resort">Бали</h3>
+					<h4 class="card-price">88600 р.</h4>
+					<p class="card-country">Индонезия</p>
+				</div>
+				<div class="card item-ind" data-category="ind">
+					<img class="card-img"src="img/t4.jpg" alt="тур"/>
+					<h3 class="card-resort">Кута</h3>
+					<h4 class="card-price">81666 руб.</h4>
+					<p class="card-country">Индонезия</p>
+				</div>
+				<div class="card item-china" data-category="china">
+					<img class="card-img"src="img/t5.jpg" alt="тур"/>
+					<h3 class="card-resort">Санья</h3>
+					<h4 class="card-price">48600 руб.</h4>
+					<p class="card-country">Китай</p>
+				</div>
+				<div class="card item-china" data-category="china">
+					<img class="card-img"src="img/t6.jpg" alt="тур"/>
+					<h3 class="card-resort">Пекин</h3>
+					<h4 class="card-price">58750 руб.</h4>
+					<p class="card-country">Китай</p>
+				</div>
+				<div class="card item-viet" data-category="viet">
+					<img class="card-img"src="img/t7.jpg" alt="тур"/>
+					<h3 class="card-resort">Дананг</h3>
+					<h4 class="card-price">62600 руб.</h4>
+					<p class="card-country">Вьетнам</p>
+				</div>
+				<div class="card item-viet" data-category="viet">
+					<img class="card-img"src="img/t8.jpg" alt="тур"/>
+					<h3 class="card-resort">Нянчанг</h3>
+					<h4 class="card-price">72800 руб.</h4>
+					<p class="card-country">Вьетнам</p>
+				</div>
+		</div>
+	</div>
+	</section>
+	<!-- Консультанты -->
+	<section class="manager">
+		<h2 class="section-title">Наши консультанты</h2>
+		<p class="manger__text">У нас работают профессионалы с огромным опытом. Мы заботимся, о том, чтобы вы хорошо отдохнули.</p>
+		<ul class="grid">
+			<li class="team-list">
+				<img class="team-list__img" src="img/manager1.jpg" alt="консультант">
+				<p class="team-list__text">Светлана Астахова - менеджер по туризму</p>
+			</li>
+			<li class="team-list">
+				<img class="team-list__img" src="img/manager2.jpg" alt="консультант">
+				<p class="team-list__text">Сергей Иванов - менеджер по туризму</p>
+			</li>
+			<li class="team-list">
+				<img class="team-list__img" src="img/manager3.jpg" alt="консультант">
+				<p class="team-list__text">Олеся Михайлова - менеджер по туризму</p>
+			</li>
+		</ul>
+	</section>
+		<!-- Видео фон -->
+		<div class="video-bg">
+			<video src="video-fon.mp4" type="video/mp4" autoplay muted loop></video>
+			<div class="bg"></div>
+			<div class="video-bg__content">
+				<h1 class="video-bg__title">Совсем скоро старт бронирования туров с кэшбэком 2023</h1>
+				<h2 class="video-bg__subtitle">Успейте поймать самые выгодные предложения!</h2>
+			</div>
+		</div>
+	<!-- Преимущества -->
+	<section class="features">
+		<h2 class="section-title">Наши преимущества</h2>
+		<p class="features-text">Лучший онлайн поиск туров по России и за границей</p>
+		<ul class="grid-list">
+			<li class="list-item">
+				<i class="fa fa-chevron-down"></i>
+				<p class="item-text">Моментальное подтверждение турпакета</p>
+			</li>
+			<li class="list-item">
+				<i class="fa fa-list"></i>
+				<p class="item-text">Огромный выбор туров по направлениям</p>
+			</li>
+			<li class="list-item">
+				<i class="fa fa-user"></i>
+				<p class="item-text">Вся информация о клиенте конфиденциальна</p>
+			</li>
+			<li class="list-item">
+				<i class="fa fa-handshake"></i>
+				<p class="item-text">Быстрое оформление договора</p>
+			</li>
+			<li class="list-item">
+				<i class="fa fa-percent"></i>
+				<p class="item-text">Максимальные скидки по всем операторам</p>
+			</li>
+			<li class="list-item">
+				<i class="fa fa-plane"></i>
+				<p class="item-text">Покупка авиабилетов в любую точку мира</p>
+			</li>
+		</ul>
+	</section>
+		<!-- slider -->
+		<section class="slick-slider">
+			<div class="slider">
+				<div><img src="img/slider/slider1.jpg" alt="img"></div>
+				<div><img src="img/slider/slider2.jpeg" alt="img"></div>
+				<div><img src="img/slider/slider3.jpg" alt="img"></div>
+				<div><img src="img/slider/slider4.jpg" alt="img"></div>
+			  </div>
+		</section>
+	<!-- Отзывы-->
+	<div class="reviews">
+		<div class="item item-1">
+			<span>Отдыхали в Таиланде с 15.10.2022 г. От данной турфирмы. Отдых получился отличный, с погодой угадали, без дождей. Спасибо всем сотрудникам турфирмы Шангри-Ла!!!</span>
+		</div>
+		<div class="item item-2">
+			<span>Благодарны очень за организацию тура в Таиланд менеджеру Светлане. Информацию предоставила в полном объеме, доброжелательная, активная, оперативно были выполнены все наши пожелания!</span>
+		</div>
+		<div class="item item-3">
+			<span>Хочу выразить огромную благодарность Сергею. Спасибо огромное за наш прекрасный отпуск! Спасибо за выбор страны и отеля. Мы довольны!</span>
+		</div>
+		<div class="item item-4">
+			<span>С 16 по 27 октября отдыхали в Таиланде, Паттайе, отеле "Амбассадор Сити". Выражаю огромную благодарность менеджеру Олесе за удачно подобранный тур: удобное время вылета, превосходный отель, чудесный пляж.</span>
+		</div>
+	</div>
+
+	<!-- О компании/подбор тура -->
+	<section class="selection-tour" id="bid">
+		<h2 class="section-title">Заявка на подбор тура</h2>
+		<p class="section-text">Наша компания создана для Вашего комфорта. Мы сделали выбор и покупку тура максимально удобным для Вас. В
+			нашем поиске можно найти путешествия от 80-ти туроператоров. Оплата туров происходит через защищенные каналы связи. Если Вам понадобится помощь специалиста в подборе тура, наши менеджеры всегда, с радостью
+			подберут путешествие по Вашим запросам и будут с Вами на связи на протяжении всего отдыха. Покупая тур в нашей компании, Вы не платите никаких дополнительных комиссий и сборов, Вы бронируете тур по цене	туроператора. Чтобы сделать заявку на подбор тура, заполните все поля формы и нажмите Отправить заявку.</p>
+		<div class="container-form">
+			<form action="#" class="form">
+				<div class="form-group">
+					<label>Страна назначения</label>
+					<select>
+						<option value="1">Россия</option>
+						<option value="2">Вьетнам</option>
+						<option value="3">Индонезия</option>
+						<option value="4">Китай</option>
+						<option value="5">Турция</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Город вылета</label>
+					<select>
+						<option value="1">Екатеринбург</option>
+						<option value="2">Москва</option>
+						<option value="3">Пермь</option>
+						<option value="4">Челябинск</option>
+						<option value="5">Новосибирск</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Количество дней</label>
+					<input type="number" min="3" max="14" value="3">
+				</div>
+				<div class="form-group">
+					<label>Количество человек</label>
+					<input type="number" min="1" max="14" value="1">
+				</div>
+				<div class="form-group1 form-group1_adaprive">
+					<label>Что должно быть включено в стоимость тура</label>
+					<label class="custom-checkbox">
+						<input type="checkbox" value="value-1">
+						<span>перелет</span>
+					  </label>
+					  <label class="custom-checkbox">
+						<input type="checkbox" value="value-1">
+						<span>проживание</span>
+					  </label>
+					  <label class="custom-checkbox">
+						<input type="checkbox" value="value-1">
+						<span>питание</span>
+					  </label>
+					  <label class="custom-checkbox">
+						<input type="checkbox" value="value-1">
+						<span>трансфер</span>
+					  </label>
+				</div>
+				<div class="form-group">
+					<label>Имя*</label>
+					<input type="text" required>
+				</div>
+				<div class="form-group">
+					<label>Фамилия</label>
+					<input type="text">
+				</div>
+				<div class="form-group">
+					<label>Email*</label>
+					<input type="email" placeholder="mail@mail.ru" required>
+				</div>
+				<div class="form-group">
+					<label>Номер телефона*</label>
+					<input type="tel" required placeholder="8-992-998-89-98">
+				</div>
+				<div class="form-group1 form-group1_adaprive">
+					<label>Предпочтительный способ связи</label>
+					<label class="custom-radio">
+                        <input type="radio" name="communication" value="write">
+                        <span>напишите на указанный email</span>
+                      </label>
+                      <label class="custom-radio">
+                        <input type="radio" name="communication" value="call">
+                        <span>позвоните</span>
+                      </label>
+            	</div>
+				<div class="form-group">
+					<label>Во сколько позвонить</label>
+					<input type="time">
+				</div>
+				<div class="form-group2">
+					<label>Дополнительные комментарии</label>
+					<textarea></textarea>
+				</div>
+				
+				<div class="button-form">
+					<button class="submit" type="submit">Отправить заявку</button>
+				</div>
+			</form>
+			 </div>
+	</section>
+	<!-- Футер -->
+	<footer class="footer">
+		<ul class="footer-social">
+			<li class="social__item"><a class="social-link"href="#"><i class="fa fa-twitter-square"></i></a></li>
+			<li class="social__item"><a class="social-link"href="#"><i class="fa fa-facebook-square"></i></a></li>
+			<li class="social__item"><a class="social-link"href="#"><i class="fa fa-snapchat-square"></i></a></li>
+			<li class="social__item"><a class="social-link"href="#"><i class="fa fa-pinterest-square"></i></a></li>
+			<li class="social__item"><a class="social-link"href="#"><i class="fa fa-github-square"></i></a></li>
+		</ul>
+		<p>Сайт разработал Кузьмин Дмитро</p>
+	</footer>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
