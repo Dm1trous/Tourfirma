@@ -88,3 +88,47 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+@media screen and (max-width : 800px) {
+    
+    .slick-prev,
+    .slick-next {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 18px; 
+        padding: 3px; 
+    }
+    
+
+    .slick-prev {
+        left: 5px; 
+        z-index: 50; 
+    }
+    
+    .slick-next {
+        right: 20px;
+        z-index: 50;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 20px; 
+    }
+    
+    .slick-dots {
+        bottom: -15px;
+    }
+    
+    .slick-dots li {
+        width: 15px;
+        margin: 0 3px;
+    }
+    
+    .slick-dots li button:before {
+        font-size: 30px; 
+        width: 15px;
+        height: 15px;
+    }
+}
