@@ -210,26 +210,6 @@ section {
   transition: all 0.3s;
 }
 
-.particularity__title:hover::after {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 2px;
-  background-color: #555;
-  top: 50%;
-  right: -65px;
-}
-
-.particularity__title:hover::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 2px;
-  background-color: #555;
-  top: 50%;
-  left: -65px;
-}
-
 .particularity__text {
   text-align: center;
   max-width: 70%;
@@ -844,7 +824,7 @@ line-height: 1.5;
 }
 }
 
-@media only screen and (min-width : 375px) and (max-width : 767px) {
+@media only screen and (max-width : 767px) {
 
 section {
     padding: 30px 20px; 
