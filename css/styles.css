@@ -1037,107 +1037,110 @@ line-height: 1.3;
 }
 
 @media only screen and (max-width : 374px) {
-  
   body {
-    font-size: 17px; 
+    font-size: 16px; 
   }
-
   section {
-    padding: 20px 10px; 
+    padding: 15px 5px; 
   }
 
   .section-title {
-    font-size: 22px; 
-    margin-bottom: 15px;
-  }
-
-  .slogan__title {
-    font-size: 1.5em; 
+    font-size: 20px; 
     margin-bottom: 10px;
   }
-
-  .slogan__subtitle {
-    font-size: 0.9em;
-    margin-bottom: 25px;
+  .slogan {
+    min-height: 55vh; 
   }
-  
+  .slogan__title {
+    font-size: 1.4em; 
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .slogan__subtitle {
+    font-size: 0.8em; 
+    margin-bottom: 20px;
+  }
   .slogan__btn {
     font-size: 0.6em; 
-    padding: 8px 20px;
+    padding: 8px 15px;
   }
   .particularity__title {
-    font-size: 1em; 
+    font-size: 0.9em; 
     margin-bottom: 10px;
+  }
+  .particularity__text, .section-text {
+    font-size: 0.75em; 
+    margin-bottom: 15px;
   }
   .filter-controls {
     justify-content: center; 
   }
   .ff-container label {
-    font-size: 0.8em; 
+    font-size: 14px; 
     padding: 0 5px 5px 5px; 
   }
   .reviews {
-    height: auto; 
+    height: auto;
   }
   .item {
     height: auto;
-    padding: 15px; 
+    padding: 10px; 
   }
-
   .item span {
-    font-size: 15px; 
-    line-height: 1.4;
+    font-size: 14px; 
+    line-height: 1.3;
   }
-
   .container-form {
-    padding: 15px;
+    padding: 10px;
     box-shadow: none; 
   }
-  
+  .form label {
+    font-size: 14px; 
+  }
   .form-group input, .form select {
-    height: 40px; 
-    padding: 10px;
+    height: 35px;
+    padding: 5px 10px;
     font-size: 14px;
   }
-  
+  .form-group2 textarea{
+    height: 15vh; 
+  }
   .form-group input[type="time"] {
-    width: 60%; 
+    width: 65%; 
   }
-  
   .button-form {
-    width: 100%; 
+    width: 100%;
+    margin-top: 5px;
   }
-
   .submit {
-    padding: 10px 20px;
+    width: 100%;
+    padding: 8px 15px;
   }
-  
-  .particularity__text, .section-text {
-    font-size: 0.75em; 
-    margin-bottom: 15px;
-  }
-
   .video-bg {
-    height: 25vh; 
+    height: 20vh; 
   }
   .video-bg video {
-    height: 25vh;
+    height: 20vh;
   }
   .video-bg__title {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .video-bg__subtitle {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
-  
-  /* Футер */
+  .list-item i {
+    font-size: 20px;
+  }
+  .item-text {
+    font-size: 0.7em;
+  }
   .footer-social {
-    font-size: 24px; 
+    font-size: 20px; 
   }
   .social__item {
-    margin: 0 10px;
+    margin: 0 8px;
   }
   footer p {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
